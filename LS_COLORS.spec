@@ -1,8 +1,8 @@
 Name     : LS_COLORS
 Version  : dfd04b75cf1f68400705fa01f76cd8144d7e9d39
-Release  : 1
-URL      : https://github.com/trapd00r/LS_COLORS/archive/%{version}.zip
-Source0  : https://github.com/trapd00r/LS_COLORS/archive/%{version}.zip
+Release  : 2
+URL      : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
+Source0  : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
