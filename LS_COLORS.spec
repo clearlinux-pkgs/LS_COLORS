@@ -1,8 +1,9 @@
 Name     : LS_COLORS
 Version  : dfd04b75cf1f68400705fa01f76cd8144d7e9d39
-Release  : 2
+Release  : 3
 URL      : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
 Source0  : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
+Source1  : 50-colors.sh
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -21,9 +22,11 @@ with capabilities of displaying 256 colors.
 %build
 
 %install
-mkdir -p %{buildroot}/usr/share/defaults/etc
+mkdir -p %{buildroot}/usr/share/defaults/etc/profile.d/
 install -m 0644 LS_COLORS %{buildroot}/usr/share/defaults/etc/
+install -m 644 -D %{SOURCE1} %{buildroot}/usr/share/defaults/etc/profile.d/50-colors.sh
 
 %files
 %defattr(-,root,root,-)
 /usr/share/defaults/etc/LS_COLORS
+/usr/share/defaults/etc/profile.d/50-colors.sh
