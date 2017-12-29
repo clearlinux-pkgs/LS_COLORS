@@ -1,6 +1,6 @@
 Name     : LS_COLORS
 Version  : dfd04b75cf1f68400705fa01f76cd8144d7e9d39
-Release  : 4
+Release  : 5
 URL      : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
 Source0  : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
 Source1  : 50-colors.sh
@@ -8,6 +8,7 @@ Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 
+Patch1   : no-bubble-gum.patch
 %description
 LS_COLORS
 =========
@@ -18,6 +19,7 @@ with capabilities of displaying 256 colors.
 
 %prep
 %setup -q -n LS_COLORS-%{version}
+%patch1 -p1 
 
 %build
 
