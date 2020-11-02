@@ -1,6 +1,6 @@
 Name     : LS_COLORS
 Version  : dfd04b75cf1f68400705fa01f76cd8144d7e9d39
-Release  : 9
+Release  : 10
 URL      : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
 Source0  : https://github.com/trapd00r/LS_COLORS/archive/dfd04b75cf1f68400705fa01f76cd8144d7e9d39.zip
 Source1  : 50-colors.sh
